@@ -10,20 +10,68 @@
     <script src="https://kit.fontawesome.com/7ffd5a9ea9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
-    <div class="container">
     <nav> 
-       
+        <img src="images/CTU Logo.png" class="logo">
         <ul id="sidemenu">
-     
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#portfolio">ARTICLES</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-
+        <div class="center">
+        <button id="show-login"> LOG IN </button>
+    </div>
     </nav>
-    <div class="header-text">
+<div id="header">
+     
+    <div class="container">
+       
+
+        
+     
+        <div class="header-text">
    
     <h1>SINO SI<span><i> SUGAL JUDE </i></span>!?</h1>
-    <p>An Article By: Julius Robin Singcol<br>Assistant Writer: ChatGPt</p>
+    <p>An Article By: Julius Robin Singcol<br>Assistant Writer: ChatGPT</p>
+        </div>
+
+       
+      
+            <!--pop up--> 
+        <div id="mydiv">
+           
+      
+      
+           <div class="popup">
+          
+          
+          <div class="close-btn">&times;</div>
+          <div class="form">
+            <h2> Log in </h2>
+            <div class="form-element">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Enter Email">
+            </div>
+            <div class="form-element">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Enter Password">
+            </div>
+            <div class="form-element">
+              <input type="checkbox" id="remember-me">
+              <label for="remember-me">Remember me </label>
+            </div>
+            <div class="form-element">
+              <button>Sign In</button>
+            </div>
+            <div class="form-element">
+              <a href="#">Forgot password</a>
+            </div>
+      
+             </div>
+             </div>
+          </div>
+      
+        </div>
     </div>
 
 
@@ -123,8 +171,8 @@
 
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>Lebrong James Calzada</span><br><p>Ang tanging kalaban ni Sugal Jude sa billiards ay si Lebrong James Calzada. Si Lebrong James ay isang matinding manlalaro na nagsisilbing pangunahing hamon para kay Sugal Jude. Sa kanilang mga laban, nagiging mas kapanapanabik ang mga ito dahil sa kanilang matinding kompetisyon at kakayahan.</p></li>
-                        <li><span>Christianity Russel (GAGS)</span><br><p>Si Gags, ang nag-iisang taong matinding tumututol sa Lutaoism ni Sugal Jude, ay naniniwala na ang mga prinsipyo ng Lutaoism ay hindi nakasulat sa Bibliya. Bilang isang reincarnation ni Kenjiesus Christ, ang kanyang mga argumento ay kadalasang nakatuon sa mga tradisyunal na pananampalataya at mga aral ng Kristiyanismo, na nagiging sanhi ng matinding hidwaan sa ideolohiya nina Sugal Jude at Gags.</p></li>
+                        <li><span>King James Calzada</span><br><p>Ang tanging kalaban ni Sugal Jude sa billiards ay si Lebrong James Calzada. Si Lebrong James ay isang matinding manlalaro na nagsisilbing pangunahing hamon para kay Sugal Jude. Sa kanilang mga laban, nagiging mas kapanapanabik ang mga ito dahil sa kanilang matinding kompetisyon at kakayahan.</p></li>
+                        <li><span>Gags</span><br><p>Si Gags, ang nag-iisang taong matinding tumututol sa Lutaoism ni Sugal Jude, ay naniniwala na ang mga prinsipyo ng Lutaoism ay hindi nakasulat sa Bibliya. Bilang isang reincarnation ni Kenjiesus Christ, ang kanyang mga argumento ay kadalasang nakatuon sa mga tradisyunal na pananampalataya at mga aral ng Kristiyanismo, na nagiging sanhi ng matinding hidwaan sa ideolohiya nina Sugal Jude at Gags.</p></li>
                         <li><span>Mother of All Computer</span> <br><p>Ang "Mother of All Computers" ay itinuturing na unang tao na nag-imbento ng computer at siya rin ang nagturo kay Sugal Jude kung paano masterin ang kanyang mga kakayahan sa programming language. Sa kanyang makabagbag-damdaming kontribusyon sa larangan ng teknolohiya, nagbigay siya ng inspirasyon at kaalaman kay Sugal Jude, na tumulong sa kanyang pag-unawa sa mga prinsipyo ng programming.</p></li>
                     </ul>
                 </div>
@@ -151,26 +199,33 @@
 
 
 
-<!-- ---------portfolio------>
+<!-- --------LAtest----->
 <div id="portfolio">
     <div class="container">
+        <h1> Latest Article</h1>
+
+      
     <h1 class="sub-title"></h1>
     <div class="work-list">
         <div class="work">
             <img src="/images/mel.jpg">
             <div class="layer">
-                <h3>KILALANIN SI LEBRONG JAMES CALZADA</h3>
+                <h2>KILALANIN SI <span>KING JAMES CALZADA</span></h2>
                 <p>Inspired by Codechum 2023 Challenge Champion.
                 </p>
+                <p2> 3 days ago
+                </p2>
                 
             </div>
         </div>
         <div class="work">
             <img src="/images/judito.jpg">
             <div class="layer">
-                <h3>DAILY LIFE OF A BSCpE STUDENT</h3>
+                <h1>DAILY LIFE OF A <span> BSCpE STUDENT </span></h1>
                 <p>Look into the day to day life of a BSCpE student in Cebu Technological University Danao.
                 </p>
+                <p2> 2 days ago
+                </p2>
                 
             </div>
             
@@ -178,9 +233,11 @@
         <div class="work">
             <img src="/images/gagas.jpg">
             <div class="layer">
-                <h3>GAGS: Gnosis and Guidance for Spirituality</h3>
-                <p> Explore Christianity Russel's (GAGS) love for Kenjiesus Christ.
+                <h3><span>GAGS</span>: Gnosis and Guidance for Spirituality</h3>
+                <p> Explore Christian Russel's (GAGS) love for Kenjiesus Christ.
                 </p>
+                <p2> 5 days ago
+                </p2>
                
             </div>
         </div>
@@ -217,24 +274,10 @@
     }
 
 </script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz4V09v_as1L6zwaUPndk2-KNnRKJP-ep6588AMvdv_EVgM_IXnYzPlU9OPWW31Ifo3dQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response =>  {
-            msg.innerHTML = "Message sent successfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
+<script src="./scripts/script.js"></script>
   </script>
+
+
 </body>
 </html>     
 
